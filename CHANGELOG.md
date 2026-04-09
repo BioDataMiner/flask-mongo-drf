@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 2026-04-08
 
 ### Added
-- Initial release of flask-mongo-rest
+- Initial release of flask-mongo-drf
 - Generic `MongoModelViewSet` for rapid CRUD API development
 - Dependency injection pattern for decoupled Model and Database layers
 - Auto-generated Swagger/OpenAPI documentation via Flasgger

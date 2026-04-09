@@ -3,7 +3,7 @@ import logging
 from flask_cors import CORS
 from flasgger import Swagger
 from flask import Flask, send_from_directory
-from flask_mongo_rest.contrib import init_mongodb
+from flask_mongo_drf.contrib import init_mongodb
 
 from config.settings import Config
 
@@ -49,7 +49,7 @@ def create_app():
         "swagger": "2.0",
         "info": {
             "title": "BioVista API",
-            "description": "flask-mongo-rest的自动化接口文档",
+            "description": "flask-mongo-drf的自动化接口文档",
             "contact": {
                 "responsibleOrganization": "wangyunkai",
                 "email": "yunkaiwang0901@gmail.com",

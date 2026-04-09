@@ -1,4 +1,4 @@
-# flask_mongo_rest/contrib/mongodb_manager.py
+# flask_mongo_drf/contrib/mongodb_manager.py
 import logging
 from typing import Dict, Optional
 
@@ -6,7 +6,7 @@ from pymongo import MongoClient
 from pymongo.collection import Collection
 from pymongo.errors import ConnectionFailure, ConfigurationError
 
-from flask_mongo_rest import MongoDBConnectionError
+from flask_mongo_drf import MongoDBConnectionError
 
 logger = logging.getLogger(__name__)
 

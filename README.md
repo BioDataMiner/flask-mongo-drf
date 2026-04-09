@@ -1,9 +1,9 @@
-# 🚀 flask-mongo-rest
+# 🚀 flask-mongo-drf
 
-[![PyPI version](https://badge.fury.io/py/flask-mongo-rest.svg)](https://badge.fury.io/py/flask-mongo-rest)
+[![PyPI version](https://badge.fury.io/py/flask-mongo-drf.svg)](https://badge.fury.io/py/flask-mongo-drf)
 [![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Documentation Status](https://readthedocs.org/projects/flask-mongo-rest/badge/?version=latest)](https://flask-mongo-rest.readthedocs.io/en/latest/?badge=latest)
+[![Documentation Status](https://readthedocs.org/projects/flask-mongo-drf/badge/?version=latest)](https://flask-mongo-drf.readthedocs.io/en/latest/?badge=latest)
 
 An industrial-grade Flask framework for building RESTful APIs with MongoDB, featuring **automatic Swagger documentation**, **dependency injection**, and **production-ready patterns**.
 
@@ -23,14 +23,14 @@ An industrial-grade Flask framework for building RESTful APIs with MongoDB, feat
 Install from PyPI:
 
 ```bash
-pip install flask-mongo-rest
+pip install flask-mongo-drf
 ```
 
 Or install from source:
 
 ```bash
-git clone https://github.com/BioDataMiner/flask-mongo-rest.git
-cd flask-mongo-rest
+git clone https://github.com/BioDataMiner/flask-mongo-drf.git
+cd flask-mongo-drf
 pip install -e .
 ```
 
@@ -39,8 +39,9 @@ pip install -e .
 ### 1. Define Your Model
 
 ```python
-from flask_mongo_rest import MongoBaseModel
-from flask_mongo_rest.contrib import MongoDBManager
+from flask_mongo_drf import MongoBaseModel
+from flask_mongo_drf.contrib import MongoDBManager
+
 
 class UserModel(MongoBaseModel):
     def __init__(self):
@@ -54,7 +55,8 @@ class UserModel(MongoBaseModel):
 ### 2. Create a Serializer
 
 ```python
-from flask_mongo_rest import Serializer
+from flask_mongo_drf import Serializer
+
 
 class UserSerializer(Serializer):
     username = CharField(required=True, max_length=100)
@@ -65,7 +67,8 @@ class UserSerializer(Serializer):
 ### 3. Build a ViewSet
 
 ```python
-from flask_mongo_rest import MongoModelViewSet
+from flask_mongo_drf import MongoModelViewSet
+
 
 class UserViewSet(MongoModelViewSet):
     model_class = UserModel
@@ -95,7 +98,7 @@ Visit `http://localhost:5000/apidocs/` to explore your auto-generated API docume
 
 ## 📚 Documentation
 
-Full documentation is available at [ReadTheDocs](https://flask-mongo-rest.readthedocs.io/).
+Full documentation is available at [ReadTheDocs](https://flask-mongo-drf.readthedocs.io/).
 
 ### Core Modules
 
@@ -123,7 +126,7 @@ pytest tests/ -v
 Run with coverage:
 
 ```bash
-pytest tests/ --cov=flask_mongo_rest --cov-report=html
+pytest tests/ --cov=flask_mongo_drf --cov-report=html
 ```
 
 ## 📖 Example Project
@@ -177,7 +180,7 @@ The framework uses **constructor-based dependency injection** to decouple the Mo
 ### Multi-Database Setup
 
 ```python
-from flask_mongo_rest.contrib import MongoDBManager, init_mongodb
+from flask_mongo_drf.contrib import MongoDBManager, init_mongodb
 
 # Register multiple MongoDB clients
 MongoDBManager.register_client(
@@ -220,8 +223,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## 📞 Support
 
-For issues, questions, or suggestions, please open an issue on [GitHub](https://github.com/BioDataMiner/flask-mongo-rest/issues).
+For issues, questions, or suggestions, please open an issue on [GitHub](https://github.com/BioDataMiner/flask-mongo-drf/issues).
 
 ---
 
-**Made with ❤️ by the flask-mongo-rest**
+**Made with ❤️ by the flask-mongo-drf**

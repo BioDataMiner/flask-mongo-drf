@@ -1,5 +1,5 @@
-from flask_mongo_rest import MongoBaseModel
-from flask_mongo_rest.contrib import MongoDBManager
+from flask_mongo_drf import MongoBaseModel
+from flask_mongo_drf.contrib import MongoDBManager
 
 
 class ScanMonitorPathModel(MongoBaseModel):

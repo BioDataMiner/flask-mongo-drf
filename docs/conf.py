@@ -5,7 +5,7 @@ import sys
 sys.path.insert(0, os.path.abspath('..'))
 
 # Project information
-project = 'flask-mongo-rest'
+project = 'flask-mongo-drf'
 copyright = '2026, wangyunkai'
 author = 'wangyunkai'
 release = '1.0.0'

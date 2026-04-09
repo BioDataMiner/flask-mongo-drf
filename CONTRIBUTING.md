@@ -1,6 +1,6 @@
-# Contributing to flask-mongo-rest
+# Contributing to flask-mongo-drf
 
-Thank you for your interest in contributing to flask-mongo-rest! This document provides guidelines and instructions for contributing.
+Thank you for your interest in contributing to flask-mongo-drf! This document provides guidelines and instructions for contributing.
 
 ## Code of Conduct
 
@@ -20,8 +20,8 @@ We are committed to providing a welcoming and inspiring community for all. Pleas
 
 2. Clone your fork locally:
    ```bash
-   git clone https://github.com/BioDataMiner/flask-mongo-rest.git
-   cd flask-mongo-rest
+   git clone https://github.com/BioDataMiner/flask-mongo-drf.git
+   cd flask-mongo-drf
    ```
 
 3. Create a virtual environment:
@@ -49,7 +49,7 @@ We are committed to providing a welcoming and inspiring community for all. Pleas
 pytest tests/ -v
 
 # Run with coverage
-pytest tests/ --cov=flask_mongo_rest --cov-report=html
+pytest tests/ --cov=flask_mongo_drf --cov-report=html
 
 # Run specific test file
 pytest tests/test_models.py -v
@@ -61,10 +61,10 @@ We use `black` for code formatting and `flake8` for linting.
 
 ```bash
 # Format code with black
-black flask_mongo_rest/ tests/
+black flask_mongo_drf/ tests/
 
 # Check code style with flake8
-flake8 flask_mongo_rest/ tests/
+flake8 flask_mongo_drf/ tests/
 ```
 
 ### Writing Tests
@@ -78,7 +78,8 @@ Example test structure:
 
 ```python
 import pytest
-from flask_mongo_rest import MongoBaseModel
+from flask_mongo_drf import MongoBaseModel
+
 
 class TestMongoBaseModel:
     def test_insert_one(self, mock_collection):
@@ -118,8 +119,8 @@ Fixes #123
 
 1. Update the CHANGELOG.md with notes on your changes.
 2. Ensure all tests pass: `pytest tests/ -v`
-3. Ensure code is formatted: `black flask_mongo_rest/ tests/`
-4. Ensure no linting issues: `flake8 flask_mongo_rest/ tests/`
+3. Ensure code is formatted: `black flask_mongo_drf/ tests/`
+4. Ensure no linting issues: `flake8 flask_mongo_drf/ tests/`
 5. Push your branch to GitHub.
 6. Create a Pull Request with a clear description of your changes.
 7. Link any related issues.
@@ -138,7 +139,7 @@ When reporting bugs, please include:
 
 - Python version
 - MongoDB version
-- flask-mongo-rest version
+- flask-mongo-drf version
 - Minimal code example to reproduce the issue
 - Expected vs. actual behavior
 - Error messages and stack traces
@@ -168,4 +169,4 @@ Feel free to open an issue or reach out to the maintainers.
 
 ---
 
-Thank you for contributing to flask-mongo-rest! 🎉
+Thank you for contributing to flask-mongo-drf! 🎉

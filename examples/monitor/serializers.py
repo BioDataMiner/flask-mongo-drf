@@ -1,6 +1,6 @@
 # serializers.py
 from .models import ScanMonitorPathModel
-from flask_mongo_rest import ModelSerializer, CharField, DateTimeField
+from flask_mongo_drf import ModelSerializer, CharField, DateTimeField
 
 
 class ScanMonitorPathSerializer(ModelSerializer):

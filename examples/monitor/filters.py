@@ -1,4 +1,4 @@
-from flask_mongo_rest import FilterSet, CharFilter
+from flask_mongo_drf import FilterSet, CharFilter
 
 
 class ScanMonitorPathFilter(FilterSet):

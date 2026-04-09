@@ -1,4 +1,4 @@
-from flask_mongo_rest import MongoPagination
+from flask_mongo_drf import MongoPagination
 
 
 class ScanMonitorPathPagination(MongoPagination):

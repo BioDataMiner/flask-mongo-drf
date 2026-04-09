@@ -1,4 +1,4 @@
-flask-mongo-rest Documentation
+flask-mongo-drf Documentation
 ==============================
 
 An industrial-grade Flask framework for building RESTful APIs with MongoDB.

@@ -3,7 +3,7 @@ requires = ["setuptools>=62", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "flask-mongo-rest"
+name = "flask-mongo-drf"
 version = "1.0.0"
 description = "Industrial Flask framework for building RESTful APIs with MongoDB"
 readme = "README.md"
@@ -44,10 +44,10 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/BioDataMiner/flask-mongo-rest"
-Documentation = "https://flask-mongo-rest.readthedocs.io"
-Repository = "https://github.com/BioDataMiner/flask-mongo-rest.git"
-"Bug Tracker" = "https://github.com/BioDataMiner/flask-mongo-rest/issues"
+Homepage = "https://github.com/BioDataMiner/flask-mongo-drf"
+Documentation = "https://flask-mongo-drf.readthedocs.io"
+Repository = "https://github.com/BioDataMiner/flask-mongo-drf.git"
+"Bug Tracker" = "https://github.com/BioDataMiner/flask-mongo-drf/issues"
 
 [tool.black]
 line-length = 100
@@ -56,10 +56,10 @@ target-version = ['py37', 'py38', 'py39', 'py310', 'py311']
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 python_files = ["test_*.py"]
-addopts = "--cov=flask_mongo_rest --cov-report=html --cov-report=term-missing"
+addopts = "--cov=flask_mongo_drf --cov-report=html --cov-report=term-missing"
 
 [tool.coverage.run]
-source = ["flask_mongo_rest"]
+source = ["flask_mongo_drf"]
 omit = ["*/tests/*", "*/site-packages/*"]
 
 [tool.coverage.report]

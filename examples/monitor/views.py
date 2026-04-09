@@ -1,4 +1,4 @@
-from flask_mongo_rest import MongoModelViewSet
+from flask_mongo_drf import MongoModelViewSet
 
 from .models import ScanMonitorPathModel
 from .filters import ScanMonitorPathFilter

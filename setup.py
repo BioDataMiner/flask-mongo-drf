@@ -4,18 +4,18 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name="flask-mongo-rest",
+    name="flask-mongo-drf",
     version="1.0.0",
     author="wangyunkai",
     author_email="yunkaiwang0901@gmail.com",
     description="Industrial Flask framework for building RESTful APIs with MongoDB, featuring automatic Swagger documentation and dependency injection.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/BioDataMiner/flask-mongo-rest",
+    url="https://github.com/BioDataMiner/flask-mongo-drf",
     project_urls={
-        "Bug Tracker": "https://github.com/BioDataMiner/flask-mongo-rest/issues",
-        "Documentation": "https://flask-mongo-rest.readthedocs.io",
-        "Source Code": "https://github.com/BioDataMiner/flask-mongo-rest",
+        "Bug Tracker": "https://github.com/BioDataMiner/flask-mongo-drf/issues",
+        "Documentation": "https://flask-mongo-drf.readthedocs.io",
+        "Source Code": "https://github.com/BioDataMiner/flask-mongo-drf",
     },
     packages=find_packages(exclude=["tests", "examples", "docs"]),
     include_package_data=True,

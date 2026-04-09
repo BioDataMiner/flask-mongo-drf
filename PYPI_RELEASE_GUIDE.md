@@ -1,6 +1,6 @@
-# PyPI Release Guide for flask-mongo-rest
+# PyPI Release Guide for flask-mongo-drf
 
-This guide provides step-by-step instructions for publishing flask-mongo-rest to PyPI.
+This guide provides step-by-step instructions for publishing flask-mongo-drf to PyPI.
 
 ## Prerequisites
 
@@ -19,7 +19,7 @@ Before releasing, ensure you have:
 ### 1. Prepare Your Release
 
 Update version numbers in:
-- `setup.py`: Change `version="1.0.0"` to your new version
+- `setup.py`: Change `version="1.0.0"`
 - `pyproject.toml`: Update `version = "1.0.0"`
 - `docs/conf.py`: Update `release = '1.0.0'` and `version = '1.0'`
 
@@ -38,7 +38,7 @@ Update `CHANGELOG.md` with release notes:
 
 Ensure all tests pass before release:
 ```bash
-pytest tests/ -v --cov=flask_mongo_rest
+pytest tests/ -v --cov=flask_mongo_drf
 ```
 
 ### 3. Build Distribution Packages
@@ -49,8 +49,8 @@ python -m build
 ```
 
 This generates:
-- `dist/flask-mongo-rest-1.0.0.tar.gz` (source distribution)
-- `dist/flask_mongo_rest-1.0.0-py3-none-any.whl` (wheel)
+- `dist/flask-mongo-drf-1.0.0.tar.gz` (source distribution)
+- `dist/flask_mongo_drf-1.0.0-py3-none-any.whl` (wheel)
 
 ### 4. Test on TestPyPI (Recommended)
 
@@ -62,7 +62,7 @@ twine upload --repository testpypi dist/*
 
 Then test installation:
 ```bash
-pip install --index-url https://test.pypi.org/simple/ flask-mongo-rest
+pip install --index-url https://test.pypi.org/simple/ flask-mongo-drf
 ```
 
 ### 5. Create GitHub Release
@@ -81,7 +81,7 @@ pip install --index-url https://test.pypi.org/simple/ flask-mongo-rest
    ```
 
 3. Create GitHub Release:
-   - Go to [Releases](https://github.com/BioDataMiner/flask-mongo-rest/releases)
+   - Go to [Releases](https://github.com/BioDataMiner/flask-mongo-drf/releases)
    - Click "Draft a new release"
    - Select the tag you just created
    - Add release notes from CHANGELOG.md
@@ -116,11 +116,11 @@ The repository includes automated GitHub Actions workflows. When you create a re
 After publishing, verify your package:
 
 ```bash
-pip install flask-mongo-rest
-python -c "import flask_mongo_rest; print(flask_mongo_rest.__version__)"
+pip install flask-mongo-drf
+python -c "import flask_mongo_drf; print(flask_mongo_drf.__version__)"
 ```
 
-Check PyPI page: https://pypi.org/project/flask-mongo-rest/
+Check PyPI page: https://pypi.org/project/flask-mongo-drf/
 
 ## Version Numbering
 
@@ -141,7 +141,7 @@ Examples:
 
 Ensure your package structure is correct:
 ```
-flask_mongo_rest/
+flask_mongo_drf/
 ├── __init__.py
 ├── mongo_models.py
 ├── mongo_viewsets.py

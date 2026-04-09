@@ -2,8 +2,8 @@ import pytest
 from datetime import datetime
 from bson import ObjectId
 
-from flask_mongo_rest.mongo_exceptions import ValidationError
-from flask_mongo_rest.mongo_serializers import (
+from flask_mongo_drf.mongo_exceptions import ValidationError
+from flask_mongo_drf.mongo_serializers import (
     Serializer,
     CharField,
     IntegerField,

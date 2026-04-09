@@ -4,8 +4,8 @@ from unittest.mock import MagicMock, patch
 from bson.objectid import ObjectId
 
 # 直接导入你的类
-from flask_mongo_rest import MongoModelViewSet
-from flask_mongo_rest import Serializer, CharField
+from flask_mongo_drf import MongoModelViewSet
+from flask_mongo_drf import Serializer, CharField
 
 
 # ------------------------------

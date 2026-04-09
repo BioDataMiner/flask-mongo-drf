@@ -1,6 +1,6 @@
 # 🚀 Monitor Example
 
-This example demonstrates how to leverage the **`flask-mongo-rest`** framework to build a production-ready RESTful API for managing monitor paths. It showcases a complete CRUD implementation featuring dependency injection, dynamic filtering, and automated Swagger documentation.
+This example demonstrates how to leverage the **`flask-mongo-drf`** framework to build a production-ready RESTful API for managing monitor paths. It showcases a complete CRUD implementation featuring dependency injection, dynamic filtering, and automated Swagger documentation.
 
 ---
 
@@ -41,8 +41,8 @@ examples/
 
 ### 1. Clone & Navigate
 ```bash
-git clone https://github.com/BioDataMiner/flask-mongo-rest.git
-cd flask-mongo-rest/examples/monitor
+git clone https://github.com/BioDataMiner/flask-mongo-drf.git
+cd flask-mongo-drf/examples/monitor
 ```
 
 ### 2. Install Dependencies

@@ -1,5 +1,5 @@
 import pytest
-from flask_mongo_rest.mongo_filters import FilterSet, CharFilter, NumberFilter, BooleanFilter
+from flask_mongo_drf.mongo_filters import FilterSet, CharFilter, NumberFilter, BooleanFilter
 
 
 class UserFilterSet(FilterSet):

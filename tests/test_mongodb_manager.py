@@ -1,7 +1,7 @@
 import pytest
 from unittest.mock import MagicMock, patch
 
-from flask_mongo_rest.contrib.mongodb_manager import MongoDBManager
+from flask_mongo_drf.contrib.mongodb_manager import MongoDBManager
 
 
 # -----------------------------
@@ -19,7 +19,7 @@ def clean_mongo_manager():
 
 @pytest.fixture
 def mock_mongo_client():
-    with patch("flask_mongo_rest.contrib.mongodb_manager.MongoClient") as MockClient:
+    with patch("flask_mongo_drf.contrib.mongodb_manager.MongoClient") as MockClient:
         mock_client_instance = MagicMock()
         mock_client_instance.admin.command.return_value = {"ok": 1}
 
@@ -140,7 +140,7 @@ def test_close_all(mock_mongo_client):
 # -----------------------------
 def test_init_mongodb(mock_mongo_client):
     from flask import Flask
-    from flask_mongo_rest.contrib.mongodb_manager import init_mongodb
+    from flask_mongo_drf.contrib.mongodb_manager import init_mongodb
 
     app = Flask(__name__)
     app.config["MONGODB_SETTINGS"] = {

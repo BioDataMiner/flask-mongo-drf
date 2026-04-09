@@ -23,14 +23,14 @@ test:
 	pytest tests/ -v
 
 test-cov:
-	pytest tests/ -v --cov=flask_mongo_rest --cov-report=html --cov-report=term-missing
+	pytest tests/ -v --cov=flask_mongo_drf --cov-report=html --cov-report=term-missing
 
 lint:
-	flake8 flask_mongo_rest tests
-	black --check flask_mongo_rest tests
+	flake8 flask_mongo_drf tests
+	black --check flask_mongo_drf tests
 
 format:
-	black flask_mongo_rest tests
+	black flask_mongo_drf tests
 
 docs:
 	cd docs && make html

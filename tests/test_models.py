@@ -1,4 +1,4 @@
-from flask_mongo_rest.mongo_models import MongoBaseModel
+from flask_mongo_drf.mongo_models import MongoBaseModel
 
 
 def test_insert_and_find(mock_collection):

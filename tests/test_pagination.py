@@ -1,4 +1,4 @@
-from flask_mongo_rest.mongo_paginations import MongoPagination
+from flask_mongo_drf.mongo_paginations import MongoPagination
 
 
 def test_pagination_basic():
