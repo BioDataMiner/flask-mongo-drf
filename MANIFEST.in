@@ -1,0 +1,11 @@
+include README.md
+include LICENSE
+include CONTRIBUTING.md
+include CHANGELOG.md
+recursive-include flask_mongo_rest *.py
+recursive-include docs *.rst *.md
+recursive-include examples *.py *.md *.txt
+exclude tests/*
+exclude .github/*
+exclude .gitignore
+exclude .pytest_cache/*
