@@ -1,7 +1,7 @@
 flask-mongo-drf Documentation
-==============================
+=============================
 
-An industrial-grade Flask framework for building RESTful APIs with MongoDB.
+Flask-Mongo-DRF is an industrial-grade REST framework for Flask + MongoDB, offering a Django REST Framework-like development experience.
 
 .. toctree::
    :maxdepth: 2
@@ -35,13 +35,9 @@ An industrial-grade Flask framework for building RESTful APIs with MongoDB.
    :maxdepth: 2
    :caption: API Reference
 
-   api/models
-   api/viewsets
-   api/serializers
-   api/filters
-   api/pagination
-   api/responses
-   api/exceptions
+   api/flask_mongo_drf
+   api/flask_mongo_drf.contrib.rst
+   api/modules.rst
 
 .. toctree::
    :maxdepth: 2
